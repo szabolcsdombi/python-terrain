@@ -264,7 +264,7 @@ PyMemberDef Terrain_members[] = {
 PyType_Slot Terrain_slots[] = {
     {Py_tp_methods, Terrain_methods},
     {Py_tp_members, Terrain_members},
-    {Py_tp_dealloc, Terrain_tp_dealloc},
+    {Py_tp_dealloc, (void *)Terrain_tp_dealloc},
     {0},
 };
 
